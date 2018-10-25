@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="No">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgave 1</title>
+</head>
+<body>
+
+<input type="number" id="inputFelt">
+
+<Script>
+    const inputFelt=document.getElementById("inputFelt");
+    
+    inputFelt.oninput = function () {
+        if (inputFelt.value > 0){
+            document.write("større enn 0");
+        }
+        else {
+            document.write("mindre enn 0");
+        }
+    }
+
+
+</Script>
+
+</body>
+</html>

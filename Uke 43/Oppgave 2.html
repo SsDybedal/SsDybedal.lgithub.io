@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppgave 2</title>
+</head>
+<body>
+
+<input type="number" id = "hoyde">
+<input type="number" id = "bredde">
+<div id="losnign"></div>
+
+<script>
+    const hoyde = document.getElementById("hoyde");
+    const bredde = document.getElementById("bredde");
+
+    function finnAreal() {
+        return h*b;
+
+    }
+    hoyde.oninput = function () {
+        finnAreal(hoyde,bredde)
+    }
+
+    bredde.oninput = function () {
+        finnAreal(hoyde,bredde)
+    }
+
+</script>
+</body>
+</html>
